@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!!!')
 })
 
+// app.get('/users', (req, res) => {
+//     res.send(users)
+// })
+
 app.get('/users', (req, res) => {
     //filter by search query parameter
     if(req.query.name) {    
